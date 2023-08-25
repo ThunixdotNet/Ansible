@@ -3,7 +3,7 @@ name: default
 
 steps:
   - name: syntax
-    image: debian:11
+    image: debian:12
     commands:
       - .drone/deps
       - ansible-playbook -i hosts site.yml --syntax
